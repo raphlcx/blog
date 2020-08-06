@@ -1,0 +1,5 @@
+baseURL = "https://blog.ctfis.art"
+languageCode = "en-us"
+title = "CTF is Art"
+
+theme = "kiss"
