@@ -1,5 +1,17 @@
 baseURL = "https://blog.ctfis.art"
-languageCode = "en-us"
+languageCode = "en-gb"
 title = "CTF is Art"
-
 theme = "kiss"
+
+[params.info]
+homeTitle = "CTF is Art"
+poweredby = true
+
+[params.rss]
+placeholder = "placeholder"
+
+[params.social]
+rss = "index.xml"
+
+[params.social.config]
+platforms = ["rss"]
