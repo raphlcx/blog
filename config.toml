@@ -3,6 +3,9 @@ languageCode = "en-gb"
 title = "CTF is Art"
 theme = "kiss"
 
+[minify]
+minifyOutput = true
+
 [params.info]
 homeTitle = "CTF is Art"
 poweredby = true
