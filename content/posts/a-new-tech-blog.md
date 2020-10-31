@@ -1,5 +1,5 @@
 ---
-title: "A New Tech Blog"
+title: "A new tech blog"
 date: 2020-08-06T23:58:29+08:00
 ---
 I'm back to writing tech blog.
