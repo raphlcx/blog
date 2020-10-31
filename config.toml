@@ -3,8 +3,5 @@ languageCode = "en-gb"
 title = "CTF is Art"
 theme = "ctfisart"
 
-[minify]
-minifyOutput = true
-
 [params]
 footer = "Source on <a href=\"https://github.com/Raphx/blog.ctfis.art\">GitHub</a>. Subscribe to <a href=\"/index.xml\">RSS</a>."
