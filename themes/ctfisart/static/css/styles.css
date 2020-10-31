@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font: 1rem/1.6 sans-serif;
+  max-width: 42rem;
+}
+
+article > p {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: .8rem;
+}
+
+pre {
+  padding: 1rem;
+}
+
+code {
+  padding: .25rem;
+}
+
+pre > code {
+  padding: 0;
+}
+
+pre, code {
+  background-color: #f5f7fa;
+  font-size: .9rem;
+}
+
+.back-to-home {
+  font-size: .9rem;
+}

@@ -1,20 +1,10 @@
 baseURL = "https://blog.ctfis.art"
 languageCode = "en-gb"
 title = "CTF is Art"
-theme = "kiss"
+theme = "ctfisart"
 
 [minify]
 minifyOutput = true
 
-[params.info]
-homeTitle = "CTF is Art"
-poweredby = true
-
-[params.rss]
-placeholder = "placeholder"
-
-[params.social]
-rss = "index.xml"
-
-[params.social.config]
-platforms = ["rss"]
+[params]
+footer = "Source on <a href=\"https://github.com/Raphx/blog.ctfis.art\">GitHub</a>. Subscribe to <a href=\"/index.xml\">RSS</a>."
