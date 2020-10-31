@@ -41,3 +41,8 @@ pre, code {
 .back-to-home {
   font-size: .9rem;
 }
+
+img {
+  max-width: 100%;
+  border: 1px solid black;
+}
