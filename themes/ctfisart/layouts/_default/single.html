@@ -1,9 +1,13 @@
 {{ define "main" }}
 <main>
-  <header>
-    <h1>{{ .Title }}</h1>
-  </header>
-{{ .Content }}
-  <p class="back-to-home"><a href="/">← Back to home</a></p>
+  <article>
+    <header>
+      <h1>{{ .Title }}</h1>
+    </header>
+    {{ .Content }}
+    <footer>
+      <p class="back-to-home"><a href="/">← Back to home</a></p>
+    </footer>
+  </article>
 </main>
 {{ end }}
