@@ -18,6 +18,7 @@ footer {
 
 pre {
   padding: 1rem;
+  overflow: auto;
 }
 
 code {
