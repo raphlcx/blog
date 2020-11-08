@@ -11,11 +11,6 @@ body {
   max-width: 42rem;
 }
 
-article > p {
-  margin-top: 0;
-  font-size: 1.2rem;
-}
-
 footer {
   margin-top: 2rem;
   font-size: .8rem;
@@ -36,6 +31,11 @@ pre > code {
 pre, code {
   background-color: #f5f7fa;
   font-size: .9rem;
+}
+
+.index-post-title {
+  margin-top: 0;
+  font-size: 1.2rem;
 }
 
 .back-to-home {
