@@ -1,7 +1,7 @@
 ---
 title: "On AWS Config Custom Rule, and its friends"
 date: 2020-10-22T20:38:20+08:00
-tags: [aws,aws-config]
+tags: [aws]
 ---
 I like exploring how different AWS products are designed and beautifully orchestrated to work together in symphony. This time, I'm embarking on this adventure with AWS Config, AWS Lambda, and AWS IAM.
 

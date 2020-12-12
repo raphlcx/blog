@@ -1,7 +1,6 @@
 ---
 title: "How to manage SSH keys"
 date: 2020-10-30T22:31:41+08:00
-tags: [ssh]
 ---
 Jotting down a simple way to manage SSH keys.
 

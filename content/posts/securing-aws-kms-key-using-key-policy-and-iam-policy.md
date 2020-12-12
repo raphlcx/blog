@@ -1,7 +1,7 @@
 ---
 title: "Securing AWS KMS key using key policy and IAM policy"
 date: 2020-09-12T16:28:53+08:00
-tags: [aws,kms]
+tags: [aws]
 ---
 On AWS, we can define fine-grained permission policy on which user is allowed to manage and consume AWS resources, using IAM policy. IAM policy contains the allowed actions for specified AWS resources, and this policy is then attached to a user, group, or role, allowing the principal to exercise the permissions defined in the policy.
 

@@ -1,7 +1,7 @@
 ---
 title: "Landing Page With Amazon S3, CloudFront, AWS Certificate Manager"
 date: 2020-10-07T20:54:14+08:00
-tags: [aws,s3,cloudfront,aws-certificate-manager]
+tags: [aws]
 ---
 Last week, I created a simple landing page for a business, utilising solely AWS services, and I want to share that experience in this post.
 

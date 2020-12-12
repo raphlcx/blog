@@ -1,7 +1,7 @@
 ---
 title: "Amazon S3 Block Public Access in layman"
 date: 2020-09-21T01:17:43+08:00
-tags: [aws,s3]
+tags: [aws]
 ---
 AWS has a feature for S3, known as Block Public Access, that allows us to easily prevent public access to an S3 bucket.
 

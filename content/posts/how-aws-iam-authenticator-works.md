@@ -1,7 +1,7 @@
 ---
 title: "How aws-iam-authenticator works"
 date: 2020-08-14T21:08:47+08:00
-tags: [aws,kubernetes,authentication]
+tags: [aws]
 ---
 A few days ago I was reading up on [aws-iam-authenticator](https://github.com/kubernetes-sigs/aws-iam-authenticator). While trying to understand how it works, I came across this explanation for its client side component:
 
