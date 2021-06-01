@@ -45,4 +45,4 @@ server {
 
 This ensures all HTTP 302 redirect coming from the app is coverted to using HTTPS scheme.
 
-I'm not entirely convinced that this is the *right way* to do it, but perhaps it is. It feels weird that we are forcing a rewrite of HTTP into HTTPS, while the traffic is still traversing back up target, target group, and finally to ELB in HTTP.
+I'm not entirely convinced that this is the *right way* to do it, but perhaps it is. It feels weird that we are forcing a rewrite of HTTP into HTTPS, while the traffic is still traversing back up to target, target group, and finally the ALB in HTTP.
