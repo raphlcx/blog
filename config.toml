@@ -2,6 +2,7 @@ baseURL = "https://blog.ctfis.art"
 languageCode = "en-gb"
 title = "CTF is Art"
 theme = "ctfisart"
+disableKinds = ["section", "taxonomy", "term"]
 
 [taxonomies]
 tag = "tags"
