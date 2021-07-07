@@ -8,4 +8,4 @@ disableKinds = ["section", "taxonomy", "term"]
 tag = "tags"
 
 [params]
-footer = "Source on <a href=\"https://github.com/Raphx/blog.ctfis.art\">GitHub</a>. Subscribe to <a href=\"/index.xml\">RSS</a>."
+footer = "Subscribe to <a href=\"/index.xml\">RSS</a>."
