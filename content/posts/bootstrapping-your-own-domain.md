@@ -1,7 +1,11 @@
 ---
-title: "Bootstrapping a domain infrastructure"
+title: "Bootstrapping your own domain"
 date: 2021-07-09T20:25:48+08:00
 ---
+Bootstrapping in this context means, registering for a domain using an email address, and then changing that email address to the one that belongs to the domain itself afterwards. Example, you use `personal@mail.com` to register for `example.com` domain. Once the domain is up, you provision an `admin@example.com` email address, and switch the email for the domain, and DNS hosting service account, to use `admin@example.com`, in place of the personal email address that you used initially.
+
+The reason for doing this is to ensure critical infrastructure is not tied to any personnel. This is helpful, especially for an enterprise or business organisation, as people shift between roles, on-board, and off-board from time to time. Hence, we want to tie these critical infrastructure to a non-changing identity that belongs to the domain itself.
+
 There are 2 major components in bootstrapping a domain and its infrastructure:
 
   1. The domain name itself.
