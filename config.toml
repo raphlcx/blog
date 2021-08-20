@@ -6,6 +6,3 @@ disableKinds = ["section", "taxonomy", "term"]
 
 [taxonomies]
 tag = "tags"
-
-[params]
-footer = "Subscribe to <a href=\"/index.xml\">RSS</a>."
