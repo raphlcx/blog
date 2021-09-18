@@ -42,6 +42,14 @@ img {
   margin-top: 0;
 }
 
+.post-title {
+  margin-bottom: 0;
+}
+
+.post-time {
+  font-size: .9rem;
+}
+
 @media screen and (min-width: 600px) {
   html {
     font-size: 1.2rem;

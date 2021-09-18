@@ -2,7 +2,12 @@
 <main>
   <article>
     <header>
-      <h1>{{ .Title }}</h1>
+      <h1 class="post-title">
+        {{ .Title }}
+      </h1>
+      <time datetime={{ .Date.Format "2006-01-02" }} class="post-time">
+        {{ .Date.Format "January 02, 2006" }}
+      </time>
     </header>
     {{ .Content }}
   </article>
