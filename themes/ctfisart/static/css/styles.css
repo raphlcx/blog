@@ -48,6 +48,7 @@ img {
 
 .post-time {
   font-size: .9rem;
+  color: #444;
 }
 
 @media screen and (min-width: 600px) {
