@@ -1,7 +1,7 @@
 baseURL = "https://blog.ctfis.art"
 languageCode = "en-gb"
 title = ""
-theme = "20211019"
+theme = "blog"
 disableKinds = ["section", "taxonomy", "term"]
 
 [taxonomies]
