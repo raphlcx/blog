@@ -6,7 +6,7 @@
   {{ range .Site.RegularPages }}
   <article>
     <time datetime={{ .Date.Format "2006-01-02" }} class="post-time">
-      {{ .Date.Format "January 02, 2006" }}
+      {{ .Date.Format "2006-01-02" }}
     </time>
     <p class="index-post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
   </article>
