@@ -2,8 +2,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ hugo.Generator }}
-  <meta name="title" content="{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}">
-  <title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
+  <meta name="title" content="{{ if not .IsHome }}{{ .Title }}{{ if .Site.Title }} | {{ end }}{{ end }}{{ .Site.Title }}">
+  <title>{{ if not .IsHome }}{{ .Title }}{{ if .Site.Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
   <link rel="canonical" href="{{ .Permalink }}" />
   <link href="{{ relURL "css/styles.css" }}" rel="stylesheet">
 </head>

@@ -1,7 +1,7 @@
-# blog.ctfis.art
+# blog
 
-Static site for https://blog.ctfis.art.
+Static site for my tech blog.
 
 ## Deployment
 
-Deployment is handled by Netlify on GitHub. Simply push latest local changes on `master` branch to GitHub.
+Push latest `master` branch changes to GitHub. Netlify handles the rest.
