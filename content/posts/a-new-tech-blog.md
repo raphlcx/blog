@@ -6,7 +6,7 @@ I'm back to writing tech blog.
 
 Over the span of the past few years, I tried out various ways to publish my ideas, notes, and writings on technical matters.
 
-My first attempt was creating a custom static site generator, using plain HTML and bash script for templating. The built pages were then hosted on a VPS instance on Digital Ocean. Why build a custom static site generator, you ask? I wanted to have a full control on the contents, libraries, scripts, and styles that are displayed on the site. This was part of my strive for extreme minimal bloat, and fulling utilising semantic HTML5 for the contents.
+My first attempt was creating a custom static site generator, using plain HTML and bash script for templating. The built pages were then hosted on a VPS instance on Digital Ocean. Why build a custom static site generator, you ask? I wanted to have a full control on the contents, libraries, scripts, and styles that are displayed on the site. This was part of my strive for extreme minimal bloat, and fully utilising semantic HTML5 for the contents.
 
 Digital Ocean VPS costs money though. So I thought of using a free provider to host the static site. After all, it's static, the host doesn't require intensive computing power to serve a few HTML pages and CSS style sheets. That was when I turned to hosting the site using GitHub Pages. GitHub Pages supported the use of Jekyll, and that piqued my interest.
 
