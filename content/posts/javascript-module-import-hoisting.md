@@ -1,7 +1,6 @@
 ---
 title: "JavaScript module import hoisting"
 date: 2020-08-27T22:05:36+08:00
-tags: [javascript,typescript]
 ---
 At my current workplace, I work as a security engineer. Some of my day-to-day tasks involve submitting security patches for the software engineering teams. Over the past couple of years, the teams have written and deployed many different microservices, some baked in Java, some in Go, and some in TypeScript.
 

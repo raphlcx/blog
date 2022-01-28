@@ -1,7 +1,6 @@
 ---
 title: "Go local variable shadowing"
 date: 2020-12-12T16:11:47+08:00
-tags: [go]
 ---
 I encountered a weird case when using the `init()` function in Go.
 
