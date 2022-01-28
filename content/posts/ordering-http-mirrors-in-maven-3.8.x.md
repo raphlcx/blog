@@ -1,5 +1,5 @@
 ---
-title: "Ordering HTTP mirror in Maven 3.8.x"
+title: "Ordering HTTP mirrors in Maven 3.8.x"
 date: 2022-01-28T12:12:16+08:00
 ---
 Apache Maven version 3.8.1, or higher, disables the use of insure HTTP URI scheme for repositories.
