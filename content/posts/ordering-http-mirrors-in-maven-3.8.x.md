@@ -2,11 +2,11 @@
 title: "Ordering HTTP mirrors in Maven 3.8.x"
 date: 2022-01-28T12:12:16+08:00
 ---
-Apache Maven version 3.8.1, or higher, disables the use of insure HTTP URI scheme for repositories.
+Apache Maven version 3.8.1, or higher, disables the use of insecure HTTP URI schemes for repositories.
 
-The recommendation is to adopt HTTPS, and to use HTTP mirrors for repositories that do not support HTTPS (seriously, in 2022?).
+The recommendation is to adopt HTTPS and use HTTP mirrors for repositories that do not support HTTPS (seriously, in 2022?).
 
-My `~/.m2/settings.xml` contains a repository configuration that points to an internal repository. It also has a mirror to `miredot` repository, which does not have HTTPS available:
+My `~/.m2/settings.xml` contains a repository configuration that points to an internal repository. It also has a mirror to the `miredot` repository, which does not have HTTPS available:
 
 ```
   <servers>
@@ -48,7 +48,7 @@ My `~/.m2/settings.xml` contains a repository configuration that points to an in
 
 However, with this setup, Maven will first consult `miredot.mirror` even when installing internal artefacts, leading to a redundant round-trip to miredot every time.
 
-The workaround is to create a mirror as well for the internal repository, and setting it as the first mirror in the mirror list, example:
+The workaround is to create a mirror as well for the internal repository and set it as the first mirror in the mirror list, for example:
 
 ```
   <servers>
@@ -79,4 +79,4 @@ The workaround is to create a mirror as well for the internal repository, and se
 
 ```
 
-Now, Maven will first consult the internal repository with higher priority, falling back to miredot only if the artefact is not found within the internal repository.
+Now, Maven will first consult the internal repository with higher priority, falling back to miredot only if it could not find the artefact in the internal Maven repository.

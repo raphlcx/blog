@@ -3,13 +3,11 @@ title: "Securing AWS KMS key using key policy and IAM policy"
 date: 2020-09-12T16:28:53+08:00
 tags: [aws]
 ---
-On AWS, we can define fine-grained permission policy on which user is allowed to manage and consume AWS resources, using IAM policy. IAM policy contains the allowed actions for specified AWS resources, and this policy is then attached to a user, group, or role, allowing the principal to exercise the permissions defined in the policy.
+AWS IAM policy contains the allowed actions for specified AWS resources. The policy is attached to a user, group, or role, allowing the principal to exercise the permissions defined in the policy. Apart from IAM policy, there is also a resource-based policy. This type of policy is attached directly to a resource instead of a principal.
 
-Let's take the case of AWS KMS key. I like to think of IAM policy as defining *who* can use which resources, e.g. which KMS key, but AWS KMS itself is integrated with many other AWS services, and without tightening the policy on what an KMS key can be used for, anyone who is authorised to use the resource could use it for any AWS services.
+For an AWS KMS key, the `kms:ViaService` condition key in the resource-based policy is worth a study.
 
-This is where AWS KMS condition keys in a key policy could help, particularly the `kms:ViaService` condition key.
-
-On the key policy of an AWS KMS key with ARN `arn:aws:kms:us-east-1:111122223333:key/some-key`, we could specify the following in one of the policy statements:
+Within the resource-based policy of an AWS KMS key with ARN `arn:aws:kms:us-east-1:111122223333:key/some-key`, we could specify the following in one of its policy statements:
 
 ```
 {
@@ -46,8 +44,8 @@ On the IAM policy that allows the consumption of the KMS key:
 }
 ```
 
-When the IAM policy is attached to a user named John, John will be able to utilise the KMS key, but only if the KMS key is used specifically for the AWS Secrets Manager service on North Virginia (us-east-1) region.
+When the IAM policy is attached to a user named John, John can utilise the KMS key, but only if he uses the KMS key for the AWS Secrets Manager service in North Virginia (us-east-1) region.
 
-Using this approach, we are able to define *who* can use the KMS key via IAM policy, and *what* the key can be used for via AWS KMS key policy, therefore tightening the security control on the KMS key usage.
+Using this approach, we can define *who* can use the KMS key via IAM policy and *what* the key can be used for via AWS KMS resource-based policy, therefore tightening the security control on the KMS key usage.
 
-Note that if we specify the principal in the key policy as `"AWS": "*"` instead, IAM policy is essentially made redundant, since everyone is allowed to use the KMS key, as long as it is for AWS Secrets Manager.
+Note that if we specify the principal in the resource-based policy as `"AWS": "*"` instead, the IAM policy becomes redundant since everyone can use the KMS key, as long as it is for AWS Secrets Manager.
