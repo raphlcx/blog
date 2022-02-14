@@ -4,7 +4,7 @@ date: 2020-08-27T22:05:36+08:00
 ---
 At my current workplace, I work as a security engineer. My day-to-day tasks include submitting security patches to the software engineering teams. Teams write and develop microservices using a myriad of programming languages.
 
-While working on one of our TypeScript projects, I came across the concept of import hoisting and wondered why it did not work [as expected and officially documented](https://exploringjs.com/es6/ch_modules.html#_imports-are-hoisted). That drove me curious, so I started trying different ways to import modules in TypeScript, which eventually led to a Eureka moment.
+While working on one of our TypeScript projects, I came across the concept of import hoisting and wondered why it did not work [as officially documented](https://exploringjs.com/es6/ch_modules.html#_imports-are-hoisted). That drove me curious, so I started trying different ways to import modules in TypeScript, which eventually led to an Eureka moment.
 
 In this post, I want to share my experience and journey of discovery.
 
