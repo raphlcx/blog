@@ -40,15 +40,11 @@ nav {
   font-size: .9rem;
 }
 
-.index-post-title {
-  margin-top: 0;
-}
-
 .post-title {
   margin-bottom: 0;
 }
 
-.post-time {
+time {
   font-size: .9rem;
   color: #444;
 }
