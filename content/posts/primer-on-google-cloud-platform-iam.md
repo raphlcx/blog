@@ -6,17 +6,17 @@ Having worked with AWS IAM, I have always wanted to understand how other cloud p
 
 Google Cloud Platform (GCP) uses RBAC extensively.
 
-There are a few types of **principals**, i.e. users. These are primarily:
+There are a few types of _principals_, i.e. users. These are primarily:
 
   - Google account, the legit human user.
   - Service account, machine user.
   - Google group, well, a group of users.
 
-**Resources** are any cloud resources that you create on GCP, for instance, a Compute Engine VM, a Pub/Sub topic, etc.
+_Resources_ are any cloud resources that you create on GCP, for instance, a Compute Engine VM, a Pub/Sub topic, etc.
 
-Permissions are attached to **roles** and never to principals. The permissions dictate the allowed actions on resources.
+Permissions are attached to _roles_ and never to principals. The permissions dictate the allowed actions on resources.
 
-A principal is then associated with a role, and this role binding is called an **IAM policy**. Yes, it can be perplexing if you are coming from AWS.
+A principal is then associated with a role, and this role binding is called an _IAM policy_. Yes, it can be perplexing if you are coming from AWS.
 
 In a linear flow:
 
