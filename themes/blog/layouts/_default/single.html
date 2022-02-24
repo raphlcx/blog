@@ -5,9 +5,11 @@
       <h1 class="post-title">
         {{ .Title }}
       </h1>
-      <time datetime={{ .Date.Format "2006-01-02" }}>
-        {{ .Date.Format "2006-01-02" }}
-      </time>
+      <div>
+        <time datetime={{ .Date.Format "2006-01-02" }}>
+          {{ .Date.Format "2006-01-02" }}
+        </time>
+      </div>
     </header>
     {{ .Content }}
   </article>
