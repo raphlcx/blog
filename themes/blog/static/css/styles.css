@@ -40,8 +40,8 @@ nav {
   font-size: .9rem;
 }
 
-.post-title {
-  margin-bottom: 0;
+h1 {
+  margin-bottom: .2rem;
 }
 
 time {
