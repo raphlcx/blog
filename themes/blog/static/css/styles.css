@@ -50,10 +50,6 @@ time {
 }
 
 @media screen and (min-width: 600px) {
-  html {
-    font-size: 1.2rem;
-  }
-
   body {
     max-width: 37rem;
     margin-left: 2rem;
