@@ -1,7 +1,6 @@
 ---
 title: "Go: Can't evaluate struct methods in templates"
 date: 2022-04-04T20:47:00+08:00
-draft: true
 ---
 You have a User struct and a struct method for it:
 
