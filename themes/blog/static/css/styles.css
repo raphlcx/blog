@@ -18,12 +18,10 @@ pre {
 
 code {
   padding: .25rem;
-  font-size: .9rem;
 }
 
 pre > code {
   padding: 0;
-  font-size: .75rem;
 }
 
 pre, code {
