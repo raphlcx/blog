@@ -55,6 +55,12 @@ Either that or you can retain the pointer type on the struct method but pass in 
 ++ if err := tmpl.Execute(os.Stdout, &user); err != nil {
 ```
 
+Execute again. Now it works:
+
+```
+<p>My full name is abby tebby</p>
+```
+
 {{< rawhtml >}}
 <details>
   <summary>Full source code (main.go)</summary>
@@ -85,8 +91,7 @@ func main() {
 	}
 
 	return
-}
-  </code></pre>
+}</code></pre>
 </details>
 
 <details>
