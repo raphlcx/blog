@@ -4,7 +4,7 @@ date: 2022-05-03T11:26:24+08:00
 ---
 I have been using Firefox as my default browser for the past couple of years.
 
-Firefox has several built-in features to customise how you want it to remember your browsing histories. You can configure it to remember everything (the default), remember none (acting like private browsing 24/7), or have fine-grain customisation to store site data (logged in websites) but not browsing histories.
+Firefox has several built-in features to customise how you want it to remember your browsing histories. You can configure it to remember everything (the default), remember none (acting like private browsing), or have fine-grain customisation to store site data (logged in websites) but not browsing histories.
 
 With the majority of my time spent remote working and sharing screens, I wouldn't want my colleagues to know where I was browsing on my device. Browser highlights visited hyperlinks; typing a search query on the address bar shows the list of matching sites. All of these give away my privacy.
 
