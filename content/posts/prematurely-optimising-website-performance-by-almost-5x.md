@@ -18,11 +18,11 @@ Here is a comparison before and after the switch to a more minimal theme for thi
 
 Before:
 
-![network-status-before-switch](/network-status-before-switch.png)
+{{< figure src="/network-request-before-switch.png" caption="Network request before the switch">}}
 
 After:
 
-![network-status-after-switch](/network-status-after-switch.png)
+{{< figure src="/network-request-after-switch.png" caption="Network request after the switch">}}
 
 We see:
 
