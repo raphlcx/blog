@@ -8,7 +8,7 @@ After reading more on event-driven architecture (EDA) and coming across differen
 
 ## Message broker, the middle person
 
-A message broker is generally used to encourage decoupling between multiple systems, among other myriad benefits. Instead of systems communicating to each other directly, they each publish their message into a message broker, and the other party would receive it via the broker.
+A message broker is commonly employed to promote the decoupling of multiple systems, among a variety of other advantages. Rather than communicating with each other directly, systems transmit their messages to a message broker, which then relays them to the intended recipient.
 
 The broker plays an instrumental role here since it serves as the only interface between the systems. In my opinion, it is the configuration and purpose of this broker that matters, not whether it should be a queue or Pub/Sub.
 
@@ -30,6 +30,6 @@ This type of broker acts as a ledger for events that have occurred. For instance
 
 From my observation, we usually refer to a *command bus* as a queue while an *event bus* as a Pub/Sub system. So when someone says to use a queue system, they mostly mean to use a command bus.
 
-These terms are much more suitable to describe a message broker. Regardless of the type of bus, they all have some form of queue implementation to buffer and order the messages received.
+Command bus / event bus are much more suitable to describe a message broker. Regardless of the type of bus, they all have some form of queue implementation to buffer and order the messages received.
 
 In a Pub/Sub system, a sender publishes messages to the broker while a receiver subscribes to receive them. An event bus usually operates via this mechanism. But a command bus, commonly known as a queue, could work similarly as well, right?
