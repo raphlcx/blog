@@ -4,12 +4,12 @@
     <header>
       <h1>
         {{ .Title }}
+        <span class="h-time">
+          <time datetime={{ .Date.Format "2006-01-02" }}>
+            {{ .Date.Format "2006-01-02" }}
+          </time>
+        </span>
       </h1>
-      <div>
-        <time datetime={{ .Date.Format "2006-01-02" }}>
-          {{ .Date.Format "2006-01-02" }}
-        </time>
-      </div>
     </header>
     {{ .Content }}
   </article>
