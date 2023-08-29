@@ -1,6 +1,6 @@
 baseURL = "https://blog.raphlcx.com"
 languageCode = "en-gb"
-title = ""
+title = "raphlcx"
 theme = "blog"
 disableKinds = ["section", "taxonomy", "term"]
 
