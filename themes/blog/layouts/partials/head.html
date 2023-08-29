@@ -5,5 +5,8 @@
   <meta name="title" content="{{ if not .IsHome }}{{ .Title }}{{ if .Site.Title }} | {{ end }}{{ end }}{{ .Site.Title }}">
   <title>{{ if not .IsHome }}{{ .Title }}{{ if .Site.Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
   <link rel="canonical" href="{{ .Permalink }}" />
+  {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
   <link href="{{ relURL "css/styles.css" }}" rel="stylesheet">
 </head>
