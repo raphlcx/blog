@@ -12,23 +12,28 @@ So, I decided to experiment with a zero-browsing history setup on my Firefox but
 
 I'm using Firefox 99.0.1 on macOS Monterey 12.3.1. The history settings:
 
-{{< figure src="/ff-history-setting.png" caption="Firefox history setting">}}
+![Firefox history settings](/ff-history-setting.png)
 
 That sets things up according to what I want - preserve site logins but do not remember any histories.
 
-For frequently visited sites, I bookmark them. When typing search queries on the address bar, Firefox will search on the bookmark instead, allowing easier access to those bookmarked sites:
+For frequently visited sites, I bookmark them. When typing search queries on the address bar, Firefox will search on the bookmark instead, allowing easier access to those bookmarked sites. Here's the address bar search settings:
 
-{{< figure src="/ff-address-bar-search-setting.png" caption="Firefox address bar search setting">}}
+![Firefox address bar search settings](/ff-address-bar-search-setting.png)
 
-One tricky thing with bookmark is that Firefox will only select the matching result if the search query matches from the beginning of the bookmarked URL. For instance, for the bookmark named "AWS" with URL `https://us-east-1.console.aws.amazon.com/console/home?region=us-east-1#`.
+One tricky thing with bookmark is that Firefox will only select the matching result if the search query matches from the beginning of the bookmarked URL. For instance, for the bookmark named "AWS" with URL `https://us-east-1.console.aws.amazon.com/console/home?region=us-east-1#`, searching with "AWS" does not select the bookmark:
 
-{{< figure src="/ff-search-bookmark-by-name.png" caption="Searching with \"AWS\" does not select the bookmark">}}
-{{< figure src="/ff-search-bookmark-by-url.png" caption="But searching with \"us\" selects the bookmark">}}
+![Search term does not select bookmark](/ff-search-bookmark-by-name.png)
 
-If it is unconventional for you to type "us" to search for the AWS bookmark, you can set a keyword on the bookmark. Right-click on the bookmark and select "Edit bookmark...". Here, we will use the keyword "a".
+But searching with "us" selects the bookmark:
 
-{{< figure src="/ff-bookmark-keyword.png" caption="Setting a keyword on a bookmark">}}
+![Search term selects bookmark](/ff-search-bookmark-by-url.png)
 
-When searching bookmark on the address bar, you can type "a", and Firefox will select the AWS bookmark even when its URL starts with "us".
+If it is unconventional for you to type "us" to search for the AWS bookmark, you can set a keyword on the bookmark. Right-click on the bookmark and select "Edit bookmark...". Here, we will use the keyword "a":
 
-{{< figure src="/ff-search-bookmark-by-keyword.png" caption="Searching with \"a\" selects the bookmark!">}}
+![Setting keyword on bookmark](/ff-bookmark-keyword.png)
+
+When searching bookmark on the address bar, you can type "a", and Firefox will select the AWS bookmark even when its URL starts with "us":
+
+![Searching with keyword selects bookmark](/ff-search-bookmark-by-keyword.png)
+
+Wonderful!

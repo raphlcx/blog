@@ -2,7 +2,7 @@
 title: "Kubernetes Ingress as load balancer"
 date: 2022-01-30T00:48:14+08:00
 ---
-In a [previous post on Kubernetes Service]({{< relref "kubernetes-service-and-kube-proxy" >}} "Kubernetes Service and kube-proxy"), we have explored using LoadBalancer-type for a service to route edge traffic to the service's virtual IP.
+In a [previous post on Kubernetes Service]({{< ref "kubernetes-service-and-kube-proxy" >}} "Kubernetes Service and kube-proxy"), we have explored using LoadBalancer-type for a service to route edge traffic to the service's virtual IP.
 
 Now, imagine you run ten different back-end microservices internally. If each service uses a LoadBalancer-type service, your cloud provider will spin up ten load balancers, and each of them will incur hourly charges as they run. Not very forgiving for your wallet.
 

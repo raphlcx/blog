@@ -12,17 +12,17 @@ I use Hugo to generate this site. In the beginning, I used a simple and clean-lo
   - Achieve zero JavaScript.
   - Have more control over the styling of each HTML element.
 
-[I have done this previously]({{< relref "a-new-tech-blog" >}} "A new tech blog") by writing my content in pure HTML. Together with partial headers and footers, I wrote Bash scripts that take all the pieces, perform the templating, and wire them up together to produce the final HTML for each content post. I have since offloaded the templating and site-building to Hugo, but I want to retain the ability to define what gets served to my readers, which is less cruft, and less bloat.
+[I have done this previously]({{< ref "a-new-tech-blog" >}} "A new tech blog") by writing my content in pure HTML. Together with partial headers and footers, I wrote Bash scripts that take all the pieces, perform the templating, and wire them up together to produce the final HTML for each content post. I have since offloaded the templating and site-building to Hugo, but I want to retain the ability to define what gets served to my readers, which is less cruft, and less bloat.
 
 Here is a comparison before and after the switch to a more minimal theme for this site.
 
 Before:
 
-{{< figure src="/network-request-before-switch.png" caption="Network request before the switch">}}
+![Network request before the switch](/network-request-before-switch.png)
 
 After:
 
-{{< figure src="/network-request-after-switch.png" caption="Network request after the switch">}}
+![Network request after the switch](/network-request-after-switch.png)
 
 We see:
 
