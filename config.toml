@@ -7,3 +7,6 @@ disableKinds = ["section", "taxonomy", "term"]
 
 [taxonomies]
 tag = "tags"
+
+[params]
+description = "Writing as technology maker, for technology makers"

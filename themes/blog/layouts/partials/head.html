@@ -3,6 +3,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ hugo.Generator }}
   <meta name="title" content="{{ if not .IsHome }}{{ .Title }}{{ if .Site.Title }} | {{ end }}{{ end }}{{ .Site.Title }}">
+  {{- if .IsHome }}
+  <meta name="description" content="{{ .Site.Params.Description }}">
+  {{- end }}
   <title>{{ if not .IsHome }}{{ .Title }}{{ if .Site.Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
   <link rel="canonical" href="{{ .Permalink }}" />
   {{ range .AlternativeOutputFormats -}}
