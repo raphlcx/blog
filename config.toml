@@ -2,7 +2,7 @@ baseURL = "https://blog.raphlcx.com"
 languageCode = "en-gb"
 title = "raphlcx"
 theme = "blog"
-rssLimit = 15
+rssLimit = 10
 disableKinds = ["section", "taxonomy", "term"]
 
 [taxonomies]
