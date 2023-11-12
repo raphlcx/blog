@@ -18,20 +18,6 @@ GA4 (or GA) is a platform that tracks and reports analytical data on web/app tra
 
   1. Create a web data stream for the property. Name it as "example-www". The measurement ID i.e. "G-XXX" is the GA4 tag ID. Note this down because we'll use it later.
 
-  1. Define the internal traffic for this data stream. This step is for identifying analytics data sent from local development.
-
-      1. Select the data stream.
-      1. Choose to configure the tag settings.
-      1. Choose to define internal traffic.
-      1. Create a new internal traffic rule, name it as "Local development".
-      1. On the internal traffic rule, add an IP address condition for CIDR matching `127.0.0.0/8`.
-
-  1. Define data filter to exclude development and internal traffic on the property.
-
-      1. Visit the data filters page.
-      1. Create a data filter of type "Developer traffic", name it as "Developer traffic" as well. Set filter operation to "Exclude" and select "Active" under filter state.
-      1. Create a data filter of type "Internal traffic", name it as "Internal traffic" as well. Set filter operation to "Exclude" and select "Active" under filter state.
-
   1. You are done setting up GA4!
 
 ## Steps (GTM)
@@ -60,3 +46,5 @@ GTM is a tool for deploying GA4 to your website.
   1. Add required code snippets to your website.
 
   1. You have just installed GTM on your site, and you should see analytics data flowing into your Google Analytics dashboard whenever your site receives traffic.
+
+Note: You might also want to add a conditional check on your website so that it includes GTM only when it is in production environment. It prevents your local development machine from sending analytical data to GA4 every time you open up your developmental website. Alternatively, you could also include GTM in all environments, and define internal traffic rules and data filters on GA4, but as a developer, a conditional check would be much more straightforward.
