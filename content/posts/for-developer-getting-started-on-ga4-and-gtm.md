@@ -1,7 +1,6 @@
 ---
 title: "For developer: Getting started on GA4 and GTM"
 date: 2023-11-11T12:25:12+08:00
-draft: true
 ---
 
 How to setup Google Analytics 4 (GA4) and Google Tag Manager (GTM) on your local development and production website.
