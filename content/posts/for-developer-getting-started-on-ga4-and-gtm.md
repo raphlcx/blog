@@ -34,7 +34,9 @@ GTM is a tool for deploying GA4 to your website.
       1. Name the new tag as "GA4 - G-XXX", where "G-XXX" is the GA4 tag ID.
       1. Under tag configuration, add a "Google Tag". Then, fill in the tag ID field with the GA4 tag ID.
       1. Under triggering, choose "Initialization - All Pages".
-      1. Publish the change.
+      1. Save the changes.
+
+  1. Submit GTM changes by publishing and creating a new version.
 
   1. You are done setting up GTM!
 
