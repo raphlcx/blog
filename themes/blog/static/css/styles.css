@@ -55,6 +55,10 @@ h1 {
   margin-bottom: .2rem;
 }
 
+.td-top {
+  vertical-align: top;
+}
+
 .h-time {
   display: block;
   font-weight: normal;
