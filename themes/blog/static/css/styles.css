@@ -55,16 +55,17 @@ h1 {
   margin-bottom: .2rem;
 }
 
-.td-top {
+td {
+  padding: .2rem;
   vertical-align: top;
+}
+
+time {
+  font: .9rem monospace;
+  color: #444;
 }
 
 .h-time {
   display: block;
   font-weight: normal;
-}
-
-time {
-  font-size: .9rem;
-  color: #444;
 }
