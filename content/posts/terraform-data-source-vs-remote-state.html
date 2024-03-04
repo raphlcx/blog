@@ -1,0 +1,64 @@
+---
+title: "Terraform data source vs remote state"
+date: 2024-03-04T19:57:38+08:00
+---
+
+<p>HashiCorp Terraform is an excellent tool for setting up and managing cloud resources. A Terraform <em>configuration</em> refers to the collection of files that define the infrastructure, usually contained within a single file system directory.</p>
+
+<p>In certain scenarios, a Terraform configuration may need to refer to resources created by another configuration. For instance, a first configuration might establish a VPC, and then a second configuration may attempt to set up an EC2 instance but needs to refer to the VPC established by the first configuration. To address this need, Terraform provides several options, such as using data sources or remote states, each with its own advantages and disadvantages.</p>
+
+<p>The table below outlines the diffences between two options. A "(+1)" denotes an advantage, while a "(-1)" denotes a disadvantage.</p>
+
+<table class="bordered">
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Using data source</th>
+      <th>Using remote state</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Security: Access sensitive state belonging to other configurations</td>
+      <td>(+1) Not possible</td>
+      <td>(-1) Possible</td>
+    </tr>
+    <tr>
+      <td>Security: Accidentally modify resource on other configurations</td>
+      <td>(-1) Possible, since providers are declared and can be misused.</td>
+      <td>(+1) Not possible</td>
+    </tr>
+    <tr>
+      <td>Workflow: Require out-of-band knowledge of resource identifier to reference the resource</td>
+      <td>(-1) Yes</td>
+      <td>(+1) No, only require declared output in remote state.</td>
+    </tr>
+    <tr>
+      <td>Workflow: Reference resources that are not provisioned using Terraform</td>
+      <td>(+1) Yes</td>
+      <td>(-1) No</td>
+    </tr>
+    <tr>
+      <td>Code: Visualise dependency between configurations</td>
+      <td>(-1) No</td>
+      <td>(+1) Yes</td>
+    </tr>
+    <tr>
+      <td>Code: Require declaring output to share resources</td>
+      <td>(+1) No</td>
+      <td>(-1) Yes</td>
+    </tr>
+    <tr>
+      <td>Code: Referencing shared resources</td>
+      <td>Require data source declaration for every resource that needs to be shared.</td>
+      <td>Declare remote state once (or more, dependending on configuration structure), then multiple resources can be referenced from the same remote state.</td>
+    </tr>
+    <tr>
+      <td>Code: Require changing code when migrating states</td>
+      <td>(+1) No</td>
+      <td>(-1) Yes, remote state's path has to be updated.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If you are deciding whether to use a data source or remote state, feel free to select the relevant aspects and carry out a basic scoring tabulation to weigh the advantages and disadvantages. YMMV.</p>
