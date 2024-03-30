@@ -10,3 +10,4 @@ tag = "tags"
 
 [params]
 description = "Writing as technology maker, for technology makers"
+faviconPath = "favicon.png"

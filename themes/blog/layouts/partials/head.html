@@ -6,10 +6,46 @@
   {{- if .IsHome }}
   <meta name="description" content="{{ .Site.Params.Description }}">
   {{- end }}
+  <meta property="og:title" content="{{ if not .IsHome }}{{ .Title }}{{ if .Site.Title }} | {{ end }}{{ end }}{{ .Site.Title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ .Site.Params.FaviconPath | absURL }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{- if .IsHome }}
+  <meta property="og:description" content="{{ .Site.Params.Description }}">
+  {{- end }}
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ if not .IsHome }}{{ .Title }}{{ if .Site.Title }} | {{ end }}{{ end }}{{ .Site.Title }}">
+  {{- if .IsHome }}
+  <meta name="twitter:description" content="{{ .Site.Params.Description }}">
+  {{- end }}
+  <meta name="twitter:image" content="{{ .Site.Params.FaviconPath | absURL }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "{{ if .IsHome }}WebSite{{ else }}WebPage{{ end }}",
+    {{- if .IsHome }}
+    "description": "{{ .Site.Params.Description }}",
+    {{- end }}
+    "headline": "{{ if not .IsHome }}{{ .Title }}{{ if .Site.Title }} | {{ end }}{{ end }}{{ .Site.Title }}",
+    "name": "{{ if not .IsHome }}{{ .Title }}{{ if .Site.Title }} | {{ end }}{{ end }}{{ .Site.Title }}",
+    "publisher": {
+      "@type": "Person",
+      "Brand": {
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ .Site.Params.FaviconPath | absURL }}"
+        }
+      }
+    },
+    "url": "{{ .Permalink }}"
+  }
+  </script>
   <title>{{ if not .IsHome }}{{ .Title }}{{ if .Site.Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
+  <link rel="icon" type="image/png" href="{{ .Site.Params.FaviconPath | absURL }}">
   <link rel="canonical" href="{{ .Permalink }}" />
   {{ range .AlternativeOutputFormats -}}
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
-  <link href="{{ relURL "css/styles.css" }}" rel="stylesheet">
+  <link href="{{ "css/styles.css" | absURL }}" rel="stylesheet">
 </head>
