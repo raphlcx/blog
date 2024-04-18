@@ -23,3 +23,7 @@ Standard
 Guideline
 - Recommendations provided by an authoritative body. While similar to a policy, the key distinction is that compliance is not obligatory.
 - Compliance is voluntary.
+
+**
+
+Content is inspired by [this post](https://www.michalsons.com/blog/the-difference-between-a-policy-procedure-standard-and-a-guideline/42265).
