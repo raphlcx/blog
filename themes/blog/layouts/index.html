@@ -1,20 +1,25 @@
 {{ define "main" }}
 <main>
-  <table>
-    <tbody>
-      {{- range .Site.RegularPages }}
-      <tr>
-        <td>
-          <time datetime="{{ .Date.Format "2006-01-02" }}">
-            {{ .Date.Format "2006-01-02" }}
-          </time>
-        </td>
-        <td>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </td>
-      </tr>
-      {{- end }}
-    </tbody>
-  </table>
+  <article>
+    <header>
+      <h1>Posts</h1>
+    </header>
+    <table>
+      <tbody>
+        {{- range where .Site.RegularPages "Section" "posts" }}
+        <tr>
+          <td>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">
+              {{ .Date.Format "2006-01-02" }}
+            </time>
+          </td>
+          <td>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </td>
+        </tr>
+        {{- end }}
+      </tbody>
+    </table>
+  </article>
 </main>
 {{ end }}
