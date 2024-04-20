@@ -22,11 +22,15 @@ Think of it this way, lots of things are interfaces:
 
 The concept of human speech (interface) remains the same, regardless of the topic, language, and tone of the conversation (data format).
 
-## Asynchronous content loading on the web
+## Problem: Asynchronous content loading on the web
 
 Refocusing our attention on web development.
 
 When we're loading web pages, sometimes certain sections take a longer time to load, and if the time-to-first-byte is too long, it can seriously mess with the user experience. That's where asynchronous content loading comes in handy. It allows the entire page to load first and then holds off on loading those slow sections until later.
+
+But here's the thing: implementing asynchronous content loading means we've got to add custom logic to the front end. If we don't design and modularise that code carefully, maintenance can turn into a real nightmare.
+
+## Solution #1: Building contextual client
 
 Through a twist of events on SOAP, XML-RPC, REST, and JSON, the web development settled on using endpoints that return JSON data to serve up this asynchronous content. These endpoints are commonly referred to as "APIs" or "REST APIs," but calling them "REST APIs" just because they return JSON data, isn't quite accurate.
 
@@ -34,16 +38,20 @@ However, to make sense of this JSON data, the front end must parse and process i
 
 Now, taking a couple of steps back and looking at this in hindsight, did it really have to be this way?
 
-## Pain points of asynchronous loading
+## Solution #2: Progressively enhanced HTML
 
 One of the reasons why front-end intensive development gained momentum is the absence of a convenient method to manage asynchronous content loading within standard browser tooling and platforms. By embracing front-end intensive development, the process of dispatching network requests, handling responses, and executing partial page updates can be orchestrated and executed with a good level of abstraction and modularity.
 
 But what if there was a solution that could do all that without the complexities of a modern front-end development?
 
-That is where libraries such as htmx comes in. It is a JavaScript library built on the following principles:
+This is where libraries such as `htmx` come into play.
+
+`htmx` is a JavaScript library that enhances existing HTML's capabilities. It's built on the following principles:
 
 - It lets any element and event fire off network requests.
 - It supports HTTP methods beyond just GET and POST.
 - And it allows any element to get updated with new content.
 
-With tools like htmx, the back end can now offer its API as a hypermedia API instead of a JSON API. Remember, an API is just a way to get data, no matter what format it is in. If using hypermedia could make front-end development easier, maybe we don't have to stick to returning data as JSON.
+With tools like `htmx`, the back end can now offer its API as a hypermedia API instead of a JSON API.
+
+Remember, an API is just a way to get data, no matter what format it is in. If using hypermedia could make front-end development easier, maybe we don't have to stick to returning data as JSON.
