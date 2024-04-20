@@ -12,4 +12,5 @@ If you're not sure where to start, I suggest reading about [how this website cam
 
 And if you'd like to get in touch, you can find my contact information below:
 
-- Email: ralcx@outlook.com.
+- Email: ralcx@outlook.com
+- GitHub: [@raphlcx](https://github.com/raphlcx)
