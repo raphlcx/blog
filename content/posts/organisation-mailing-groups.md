@@ -3,7 +3,7 @@ title: "Organisation mailing groups"
 date: 2024-04-28T00:07:53+08:00
 ---
 
-Abel has recently launched his new company and anticipates hiring finance, tech, human resources, social marketing, and other teams in the coming months. To prepare for the company's expansion, he subscribes to cloud vendor software and services. Abel owns the domain `example.com` and has set up his email address as `abel@example.com`, which he uses to sign up for all vendor services.
+Case: Abel has recently launched his new company and anticipates hiring finance, tech, human resources, social marketing, and other teams in the coming months. To prepare for the company's expansion, he subscribes to cloud vendor software and services. Abel owns the domain `example.com` and has set up his email address as `abel@example.com`, which he uses to sign up for all vendor services.
 
 Abel's proactive approach is commendable.
 
