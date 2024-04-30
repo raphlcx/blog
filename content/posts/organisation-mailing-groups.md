@@ -42,6 +42,10 @@ Use these mailing groups to sign up as the owner of related vendor services. For
 - All members in the group can receive email messages.
 - When a member leaves the company, there's no need to migrate owner access to vendor services, as owner access is managed by the mailing group.
 
+On some occasions, you may encounter a situation where you need to sign up for multiple accounts with the same vendor, but the vendor requires unique email addresses for each account.
+
+In such cases, you can use plus addressing to sign up for these accounts while still using a single mailing group. For example, you can sign up for two AWS accounts using `tech+aws.one@example.com` and `tech+aws.two@example.com`.
+
 ## In summary
 
 Use a system user and mailing groups to manage access to systems. Avoid the use of individual human users for this purpose.
