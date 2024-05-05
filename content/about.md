@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-Hi, I'm *Ling Cong Xiang*. Welcome to my site.
+Hi, I'm Ling Cong Xiang. Welcome to my site.
 
 I've been working in the tech industry since 2015, and over the years, I've taken on various roles such as software quality assurance (QA), web development (frontend, backend, infrastructure), and cybersecurity. Although I've had diverse experiences, my core interest remains in software engineering. I find joy in the process of architecting meaningful software and workflows, all the while considering pragmatism and simplicity in my crafts.
 
