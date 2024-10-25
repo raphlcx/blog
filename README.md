@@ -4,4 +4,4 @@ Static site for my tech blog.
 
 ## Deployment
 
-Push latest changes on default branch to GitHub. Netlify handles the rest.
+Push latest changes to the default branch on GitHub.
