@@ -10,6 +10,7 @@ html {
 body {
   margin: auto;
   padding: 1rem;
+  background: #f2f2f2;
   max-width: 39rem;
   line-height: 1.6;
 }
